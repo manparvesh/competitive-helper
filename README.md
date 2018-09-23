@@ -2,8 +2,7 @@
   <h1>competitive-helper</h1>
 
   <a href="https://travis-ci.org/manparvesh/competitive-helper/builds" target="_blank"><img src="https://img.shields.io/travis-ci/manparvesh/competitive-helper.svg?style=for-the-badge" alt="Build Status"></a> 
-  <a href="https://manparvesh.mit-license.org/" target="_blank"><img src="https://img.shields.io/badge/license-MIT-blue.svg?longCache=true&style=for-the-badge" alt="License"></a> 
-  <a href="https://codecov.io/gh/manparvesh/competitive-helper" target="_blank"><img src="https://img.shields.io/codecov/c/github/manparvesh/competitive-helper/master.svg?style=for-the-badge" alt="Coverage"></a>
+  <a href="https://manparvesh.mit-license.org/" target="_blank"><img src="https://img.shields.io/badge/license-MIT-blue.svg?longCache=true&style=for-the-badge" alt="License"></a>
   <p>A helper package to help test codes written in competitive programming</p>
 </div>
 
