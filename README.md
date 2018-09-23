@@ -17,6 +17,7 @@ This package was made in the light of getting things done faster while doing com
   - Initialize the test case file.
   - Read file contents as you like.
   - Close the reader.
+- Sample test: [SolutionTest](https://github.com/manparvesh/competitive-helper/blob/master/src/test/java/com/manparvesh/competitivehelper/leetcode/SolutionTest.java)
 
 ## Provided API
 ```java
