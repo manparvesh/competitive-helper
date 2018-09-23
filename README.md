@@ -1,5 +1,12 @@
-# competitive-helper
-A helper package to help test codes written in competitive programming
+<div align="center">
+  <h1>competitive-helper</h1>
+
+  <a href="https://travis-ci.org/manparvesh/competitive-helper/builds" target="_blank"><img src="https://img.shields.io/travis-ci/manparvesh/competitive-helper.svg?style=for-the-badge" alt="Build Status"></a> 
+  <a href="https://manparvesh.mit-license.org/" target="_blank"><img src="https://img.shields.io/badge/license-MIT-blue.svg?longCache=true&style=for-the-badge" alt="License"></a> 
+  <a href="https://codecov.io/gh/manparvesh/competitive-helper" target="_blank"><img src="https://img.shields.io/codecov/c/github/manparvesh/competitive-helper/master.svg?style=for-the-badge" alt="Coverage"></a>
+  <p>A helper package to help test codes written in competitive programming</p>
+</div>
+
 
 ## Purpose
 This package was made in the light of getting things done faster while doing competitive programming. Basically, you can use it to test your code quickly on your own machine before submitting on a platform. This is only for Java.

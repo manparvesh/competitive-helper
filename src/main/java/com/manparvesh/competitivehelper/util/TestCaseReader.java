@@ -143,7 +143,6 @@ public class TestCaseReader {
     }
 
 
-
     /**
      * Reads a long from the next line of input
      *
@@ -161,7 +160,6 @@ public class TestCaseReader {
         }
         return n;
     }
-
 
 
     /**
@@ -183,22 +181,19 @@ public class TestCaseReader {
     }
 
 
-
     /**
      * Reads a String from the next line of input
      *
      * @return string
      * @throws IOException when there is nothing to read
      */
-    public static int readString() throws IOException {
+    public static String readString() throws IOException {
         String line;
-        int n;
         if ((line = bufferedReader.readLine()) != null) {
-            n = readInt(line);
+            return line;
         } else {
-            n = 0;
             System.err.println("File finished. Cannot read anymore.");
+            return null;
         }
-        return n;
     }
 }
