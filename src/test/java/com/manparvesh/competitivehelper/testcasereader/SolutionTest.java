@@ -1,20 +1,29 @@
-package com.manparvesh.competitivehelper.leetcode;
+package com.manparvesh.competitivehelper.testcasereader;
 
 import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;
 
-import static com.manparvesh.competitivehelper.util.TestCaseReader.*;
+import static com.manparvesh.competitivehelper.TestCaseReader.closeReader;
+import static com.manparvesh.competitivehelper.TestCaseReader.initReader;
+import static com.manparvesh.competitivehelper.TestCaseReader.readDouble;
+import static com.manparvesh.competitivehelper.TestCaseReader.readDoubleArray;
+import static com.manparvesh.competitivehelper.TestCaseReader.readInt;
+import static com.manparvesh.competitivehelper.TestCaseReader.readIntArray;
+import static com.manparvesh.competitivehelper.TestCaseReader.readLong;
+import static com.manparvesh.competitivehelper.TestCaseReader.readLongArray;
+import static com.manparvesh.competitivehelper.TestCaseReader.readString;
+import static com.manparvesh.competitivehelper.TestCaseReader.readStringArray;
 import static org.junit.Assert.assertEquals;
 
 public class SolutionTest {
 
-    Solution leetcodeSolution;
+    private Solution Solution;
 
     @Before
     public void setUp() {
-        leetcodeSolution = new Solution();
+        Solution = new Solution();
     }
 
     /////////////////////////////Integers/////////////////////////////
@@ -31,19 +40,19 @@ public class SolutionTest {
         int expectedSum = readInt();
 
         assertEquals(expectedSum,
-                leetcodeSolution.sumOfIntegers(inputArray));
+                Solution.sumOfIntegers(inputArray));
 
         closeReader();
     }
 
     @Test
     public void firstTestInt() throws IOException {
-        sampleTestFlowForIntegers("com/manparvesh/competitivehelper/leetcode/1.txt");
+        sampleTestFlowForIntegers("com/manparvesh/competitivehelper/testcasereader/1.txt");
     }
 
     @Test
     public void secondTestInt() throws IOException {
-        sampleTestFlowForIntegers("com/manparvesh/competitivehelper/leetcode/2.txt");
+        sampleTestFlowForIntegers("com/manparvesh/competitivehelper/testcasereader/2.txt");
     }
     /////////////////////////////Integers/////////////////////////////
 
@@ -61,19 +70,19 @@ public class SolutionTest {
         String expectedSum = readString();
 
         assertEquals(expectedSum,
-                leetcodeSolution.sumOfStrings(inputArray));
+                Solution.sumOfStrings(inputArray));
 
         closeReader();
     }
 
     @Test
     public void firstTestString() throws IOException {
-        sampleTestFlowForStrings("com/manparvesh/competitivehelper/leetcode/3.txt");
+        sampleTestFlowForStrings("com/manparvesh/competitivehelper/testcasereader/3.txt");
     }
 
     @Test
     public void secondTestString() throws IOException {
-        sampleTestFlowForStrings("com/manparvesh/competitivehelper/leetcode/4.txt");
+        sampleTestFlowForStrings("com/manparvesh/competitivehelper/testcasereader/4.txt");
     }
     /////////////////////////////Strings/////////////////////////////
 
@@ -90,19 +99,19 @@ public class SolutionTest {
         long expectedSum = readLong();
 
         assertEquals(expectedSum,
-                leetcodeSolution.sumOfLongs(inputArray));
+                Solution.sumOfLongs(inputArray));
 
         closeReader();
     }
 
     @Test
     public void firstTestLong() throws IOException {
-        sampleTestFlowForLongs("com/manparvesh/competitivehelper/leetcode/5.txt");
+        sampleTestFlowForLongs("com/manparvesh/competitivehelper/testcasereader/5.txt");
     }
 
     @Test
     public void secondTestLong() throws IOException {
-        sampleTestFlowForLongs("com/manparvesh/competitivehelper/leetcode/6.txt");
+        sampleTestFlowForLongs("com/manparvesh/competitivehelper/testcasereader/6.txt");
     }
     /////////////////////////////Longs/////////////////////////////
 
@@ -119,19 +128,19 @@ public class SolutionTest {
         double expectedSum = readDouble();
 
         assertEquals(expectedSum,
-                leetcodeSolution.sumOfDoubles(inputArray), 1E-20);
+                Solution.sumOfDoubles(inputArray), 1E-20);
 
         closeReader();
     }
 
     @Test
     public void firstTestDouble() throws IOException {
-        sampleTestFlowForDoubles("com/manparvesh/competitivehelper/leetcode/7.txt");
+        sampleTestFlowForDoubles("com/manparvesh/competitivehelper/testcasereader/7.txt");
     }
 
     @Test
     public void secondTestDouble() throws IOException {
-        sampleTestFlowForDoubles("com/manparvesh/competitivehelper/leetcode/8.txt");
+        sampleTestFlowForDoubles("com/manparvesh/competitivehelper/testcasereader/8.txt");
     }
     /////////////////////////////Double/////////////////////////////
 }

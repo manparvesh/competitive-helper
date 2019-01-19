@@ -1,7 +1,7 @@
-package com.manparvesh.competitivehelper.leetcode;
+package com.manparvesh.competitivehelper.testcasereader;
 
-public class Solution {
-    public int sumOfIntegers(int[] ar) {
+class Solution {
+    int sumOfIntegers(int[] ar) {
         int sum = 0;
         for (int n : ar) {
             sum += n;
@@ -9,7 +9,7 @@ public class Solution {
         return sum;
     }
 
-    public long sumOfLongs(long[] ar) {
+    long sumOfLongs(long[] ar) {
         long sum = 0;
         for (long n : ar) {
             sum += n;
@@ -17,7 +17,7 @@ public class Solution {
         return sum;
     }
 
-    public String sumOfStrings(String[] ar) {
+    String sumOfStrings(String[] ar) {
         StringBuilder sum = new StringBuilder();
         for (String n : ar) {
             sum.append(n);
@@ -25,7 +25,7 @@ public class Solution {
         return sum.toString();
     }
 
-    public double sumOfDoubles(double[] ar) {
+    double sumOfDoubles(double[] ar) {
         double sum = 0;
         for (double n : ar) {
             sum += n;

@@ -1,4 +1,4 @@
-package com.manparvesh.competitivehelper.util;
+package com.manparvesh.competitivehelper;
 
 import java.io.*;
 
