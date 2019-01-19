@@ -1,7 +1,20 @@
 package com.manparvesh.competitivehelper;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Objects;
 
+/**
+ * This is a class needed for competitive programming platforms like leetcode,
+ * where one needs to submit solutions in the form of specified methods instead
+ * of submitting the complete classes with main methods.
+ * <p>
+ * You can write your own tests and import different testcases written in different files,
+ * and specify how to take input from them and how the output should be.
+ */
 public class TestCaseReader {
     /**
      * Private global variable to be used while reading a test case file.
@@ -17,7 +30,7 @@ public class TestCaseReader {
      */
     public static void initReader(String filePathInResources) throws FileNotFoundException {
         ClassLoader classLoader = TestCaseReader.class.getClassLoader();
-        File fileToRead = new File(classLoader.getResource(filePathInResources).getFile());
+        File fileToRead = new File(Objects.requireNonNull(classLoader.getResource(filePathInResources)).getFile());
         FileReader fileReader = new FileReader(fileToRead);
         bufferedReader = new BufferedReader(fileReader);
     }
@@ -50,7 +63,7 @@ public class TestCaseReader {
         String line;
         int[] intArray;
         if ((line = bufferedReader.readLine()) != null) {
-            String sar[] = line.split(" ");
+            String[] sar = line.split(" ");
             intArray = new int[sar.length];
             for (int i = 0; i < sar.length; i++) {
                 intArray[i] = readInt(sar[i]);
@@ -72,7 +85,7 @@ public class TestCaseReader {
         String line;
         long[] longArray;
         if ((line = bufferedReader.readLine()) != null) {
-            String sar[] = line.split(" ");
+            String[] sar = line.split(" ");
             longArray = new long[sar.length];
             for (int i = 0; i < sar.length; i++) {
                 longArray[i] = Long.parseLong(sar[i]);
@@ -94,7 +107,7 @@ public class TestCaseReader {
         String line;
         double[] doubleArray;
         if ((line = bufferedReader.readLine()) != null) {
-            String sar[] = line.split(" ");
+            String[] sar = line.split(" ");
             doubleArray = new double[sar.length];
             for (int i = 0; i < sar.length; i++) {
                 doubleArray[i] = Double.parseDouble(sar[i]);
@@ -142,7 +155,6 @@ public class TestCaseReader {
         return n;
     }
 
-
     /**
      * Reads a long from the next line of input
      *
@@ -161,7 +173,6 @@ public class TestCaseReader {
         return n;
     }
 
-
     /**
      * Reads a double from the next line of input
      *
@@ -179,7 +190,6 @@ public class TestCaseReader {
         }
         return n;
     }
-
 
     /**
      * Reads a String from the next line of input
