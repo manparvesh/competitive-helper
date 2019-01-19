@@ -17,6 +17,11 @@ import static org.junit.Assert.assertEquals;
  * where you need to submit a complete class that can be run directly
  */
 public class MainRunner {
+    /**
+     * @param mainMethodToBeRun the method you need to test
+     * @param input provided input
+     * @param output expected output
+     */
     public static void mainRunner(Runnable mainMethodToBeRun, String input, String output) {
         // setup system.in
         ByteArrayInputStream in = new ByteArrayInputStream(input.getBytes());
